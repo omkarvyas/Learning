@@ -1,0 +1,28 @@
+Given an array of 2n integers, your task is to group these integers into n pairs of integer, say (a1, b1), (a2, b2), ..., (an, bn) which makes sum of min(ai, bi) for all i from 1 to n as large as possible. 
+
+
+In short, the sum of all number is fixed, to maximize the sum of smaller group, you want to minimize the diff of the sum of 2 groups.
+And the best way to do that is to pair the numbers that are next to each other in sorted order.
+
+
+
+
+
+You are given 2n integers, say m1,m2,m3....m2n. Now you need to find a way to group them into two parts with equal number. e.g. a1,a2,a3...an, and b1,b2,b3...bn. Now, find a way to match numbers from two parts together, then have (a1,b1), (a2,b2)...(an,bn). Sum all the min(ai,bi), so you have sum = min(a1,b1) + min(a2,b2) ... + min(an,bn).
+
+Your job is to find the maximum possible sum. A brute force way is just try all the possible pairs of numbers and find the maximum one. However, there is a very simple way. Hope this will help.
+
+
+
+what I feel is this.
+1. Divide array in middle input_array[2*n] so that is a[n] and b[n]
+2. Then make pairs of 2 numbers one from each array ((a1, b1),(a2,b2), (a3,b3))
+3. Now take minimum of each pair out tha would look like a1, b2, a3 as a1 is minimum of (a1, b1), b2 is minimum of (a2,b2), and a3 is minimum of (a3,b3) 
+4. sum of all minimums like a1+b2+a3
+
+Hints
+1. When you get input array sort it out 
+2. Then divide it in 2 arrays 
+3. then make pairs from each array 
+4. then take out minimum of each pair and then sum. 
+
