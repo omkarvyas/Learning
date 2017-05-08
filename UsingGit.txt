@@ -1,0 +1,118 @@
+########## New Git Repo Creation and adding files ##########
+
+create a new repository on GitHub. To avoid errors do not initilize the new repo with readme, license or gitignore files you can add these files after your project is created. 
+
+Open Git Bash
+
+CD to working dir. 
+
+initliza local directory as GIT repo
+$ git init
+
+
+Add files to your new local repo. This stages them for first commit 
+$ git add .
+# to unstage a file use 'git reset HEAD <your file>'
+
+commit the files you've staged in your local repo. 
+
+$ git commit -m "first commit"
+# commits the tracked changes and prepares them to be pushed to remote repo. To remove this commit and modify the file use 'git reset --soft HEAD~1' and commit and add the file again.
+
+At the top of your GitHub repository's Quick Setup page, click [<--] to copy the remote repository URL.
+$git remote add origin <remote repo url>
+#sets the new remote
+$git remot -v
+#verifies the new remote URL
+
+$git pull --rebase origin master --> if this is not done we face error "error: failed to push some refs to 'https://github.com/omkarvyas/<repo>"
+$git push origin master
+
+
+######### Removing files from the git repo and local ##########
+
+git rm <filename>
+git commit -m "removed filename"
+git push origin <branch_name>
+
+
+######### Updateing the file locally and pusing the file on the git #########
+
+git status 
+git add <filename>
+git commit -m "what was modified in the file"
+git push origin <branch_name>
+
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+#########  #########
+
+
+
