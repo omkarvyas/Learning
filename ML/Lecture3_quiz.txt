@@ -1,0 +1,102 @@
+Back
+Linear Algebra
+Practice Quiz, 5 questions
+5/5 points (100%)
+Congratulations! You passed!
+Next Item
+
+Correct
+1 / 1 points
+1. 
+Let two matrices be
+
+A=[1−2−41],B=[0538]
+What is A - B?
+
+[1−7−77]
+
+[1−7−7−7]
+Correct 
+
+[1779]
+
+[1−31−7]
+
+Correct
+1 / 1 points
+2. 
+Let x=⎡⎣⎢⎢5527⎤⎦⎥⎥
+What is 2∗x?
+
+[1010414]
+
+⎡⎣⎢⎢1010414⎤⎦⎥⎥
+Correct 
+To multiply the vector x by 2, take each element of x and multiply that element by 2.
+
+[5252172]
+
+⎡⎣⎢⎢⎢⎢5252172⎤⎦⎥⎥⎥⎥
+
+Correct
+1 / 1 points
+3. 
+Let u be a 3-dimensional vector, where specifically
+
+u=⎡⎣351⎤⎦
+What is uT?
+
+[153]
+
+⎡⎣351⎤⎦
+
+[351]
+Correct 
+
+⎡⎣153⎤⎦
+Correct
+1 / 1 points
+4. 
+Let u and v be 3-dimensional vectors, where specifically
+
+u=⎡⎣4−4−3⎤⎦
+and
+
+v=⎡⎣424⎤⎦
+What is uTv?
+
+(Hint: uT is a
+
+1x3 dimensional matrix, and v can also be seen as a 3x1
+
+matrix. The answer you want can be obtained by taking
+
+the matrix product of uT and v.) Do not add brackets to your answer.
+
+
+-4
+Correct Response 
+
+Correct
+1 / 1 points
+5. 
+Let A and B be 3x3 (square) matrices. Which of the following
+
+must necessarily hold true? Check all that apply.
+
+
+If A is the 3x3 identity matrix, then A∗B=B∗A
+Correct 
+Even though matrix multiplication is not commutative in general (A∗B≠B∗A for general matrices A,B), for the special case where A=I, we have A∗B=I∗B=B, and also B∗A=B∗I=B. So, A∗B=B∗A.
+
+A∗B∗A=B∗A∗B
+Un-selected is correct 
+
+A∗B=B∗A
+Un-selected is correct 
+
+A+B=B+A
+Correct 
+We add matrices element-wise. So, this must be true.
+
+

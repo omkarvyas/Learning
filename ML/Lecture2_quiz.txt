@@ -1,0 +1,57 @@
+Back
+Linear Regression with One Variable
+Quiz, 5 questions
+5/5 points (100%)
+Congratulations! You passed!
+Next Item
+Correct
+1 / 1 points
+1. 
+Consider the problem of predicting how well a student does in her second year of college/university, given how well she did in her first year.
+
+Specifically, let x be equal to the number of "A" grades (including A-. A and A+ grades) that a student receives in their first year of college (freshmen year). We would like to predict the value of y, which we define as the number of "A" grades they get in their second year (sophomore year).
+
+Here each row is one training example. Recall that in linear regression, our hypothesis is hθ(x)=θ0+θ1x, and we use m to denote the number of training examples.
+
+
+For the training set given above (note that this training set may also be referenced in other questions in this quiz), what is the value of m? In the box below, please enter your answer (which should be a number between 0 and 10).
+
+
+Correct
+1 / 1 points
+2. 
+Many substances that can burn (such as gasoline and alcohol) have a chemical structure based on carbon atoms; for this reason they are called hydrocarbons. A chemist wants to understand how the number of carbon atoms in a molecule affects how much energy is released when that molecule combusts (meaning that it is burned). The chemist obtains the dataset below. In the column on the right, “kJ/mol” is the unit measuring the amount of energy released.
+
+
+You would like to use linear regression (hθ(x)=θ0+θ1x) to estimate the amount of energy released (y) as a function of the number of carbon atoms (x). Which of the following do you think will be the values you obtain for θ0 and θ1? You should be able to select the right answer without actually implementing linear regression.
+Correct
+1 / 1 points
+3. 
+Suppose we set θ0=−1,θ1=2 in the linear regression hypothesis from Q1. What is hθ(6)?
+
+
+Correct
+1 / 1 points
+4. 
+Let f be some function so that
+
+f(θ0,θ1) outputs a number. For this problem,
+
+f is some arbitrary/unknown smooth function (not necessarily the
+
+cost function of linear regression, so f may have local optima).
+
+Suppose we use gradient descent to try to minimize f(θ0,θ1)
+as a function of θ0 and θ1. Which of the
+
+following statements are true? (Check all that apply.)
+
+Correct
+1 / 1 points
+5. 
+Suppose that for some linear regression problem (say, predicting housing prices as in the lecture), we have some training set, and for our training set we managed to find some θ0, θ1 such that J(θ0,θ1)=0.
+
+Which of the statements below must then be true? (Check all that apply.)
+
+
+
