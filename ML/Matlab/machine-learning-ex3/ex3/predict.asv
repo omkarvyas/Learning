@@ -23,45 +23,18 @@ p = zeros(size(X, 1), 1);
 
 % Add a column of 1's to X (the first column), and it becomes 'a1'.
 v = ones(1,m);
-
-% a1 is (m x n), where 'n' is the number of features including the bias unit
-a1 = [v' X]; 
-
+a1 = [v' X];
 
 % Multiply by Theta1 and you have 'z2'.
-% Note: When you multiply by the Theta matrices, 
-% you'll have to use transposition to get a result that is the correct size.
 
-% Theta1 is (h x n) where 'h' is the number of hidden units
-
-z2 = a1 * Theta1';
+z2 = a1*Theta1;
 % Compute the sigmoid() of 'z2', then add a column of 1's, and it becomes 'a2'
-% Note: Not getting the correct results? In the hidden layer, 
-% be sure you use sigmoid() first, then add the bias unit.
-
 sig = sigmoid(z2);
-
-% a2 is (m x (h + 1))
-
 a2 = [v' sig];
 
 % Multiply by Theta2, compute the sigmoid() and it becomes 'a3'.
-% Note: The predictions must be returned as a column vector - size (m x 1). 
-% If you return a row vector, the script will not compute the accuracy correctly.
 
-% Theta2 is (c x (h + 1)), where 'c' is the number of labels.
-
-% a3 is (m x c)
-
-a3 = a2 * Theta2';
-
-% p is a vector of size (m x 1)
-
-[max_val p] = max(a3,[],2);
-
-
-
-
+z3 = a2
 
 
 

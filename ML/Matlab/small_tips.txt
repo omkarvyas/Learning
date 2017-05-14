@@ -1,0 +1,6 @@
+
+Add column of 1's to a matrix:
+example: 
+Q = magic(3)
+m = size(Q,1)
+Q = [ones(m,1) Q]
