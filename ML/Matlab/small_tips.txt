@@ -4,3 +4,46 @@ example:
 Q = magic(3)
 m = size(Q,1)
 Q = [ones(m,1) Q]
+
+remove coloumn
+Theta1 = magic(3) this gives one 3x3 matrix
+Theta1 =
+
+     8     1     6
+     3     5     7
+     4     9     2
+
+Theta1(:,1) = [] after this step
+
+Theta1 =
+
+     1     6
+     5     7
+     9     2
+
+
+to set first coloumn to 0
+Theta1(:,1) = 0;
+
+
+Extracting a coloumn vector from a matrix 
+
+T = magic(4)
+
+T =
+
+    16     2     3    13
+     5    11    10     8
+     9     7     6    12
+     4    14    15     1
+
+v = T(:,4) it gets the fourth coloumn 
+
+v =
+
+    13
+     8
+    12
+     1
+
+     

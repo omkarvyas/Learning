@@ -1,0 +1,1 @@
+define("pages/open-course/common/utils/rtl",["require","exports","module","jquery","underscore","js/lib/language"],function(require,exports,module){"use strict";var $=require("jquery"),_=require("underscore"),e=require("js/lib/language");module.exports=function(r){_(r).some(e.isRightToLeft)&&$("html").attr({dir:"rtl"})}});
