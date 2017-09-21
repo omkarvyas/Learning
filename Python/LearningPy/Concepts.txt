@@ -1,1 +1,17 @@
 abstraction: Hide implementation from user and let user directly use the functionality like time module or web-browser module in python we do not know how it is implemented internally but we can use various functions of this library. 
+
+class: Basically class is a template which we can use, e.g. Let's say you want to play trailer for a movie or show info for the movie and stuff, so for each thing you do not want to repeate these steps, write same code for each movie so you write a class. 
+Example: template 
+
+title 
+storyline
+
+def show_trailer():
+	#open browser and play trailer
+def show_info():
+	# Print movie information
+
+
+webrowser.open = it is just a function call.
+class
+turtle.Turtle = calls init and creates memory for it

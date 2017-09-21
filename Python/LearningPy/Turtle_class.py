@@ -1,18 +1,18 @@
-
-
 #import all the modules you need
 import turtle
 import signal
 import sys
+import random
 
-
-
-#def set_background():
+colors  = ["red","green","blue","orange","purple","pink","yellow"] # Make a list of colors to picvk from
+""" Window Paramaeters where you want to draw"""
 
 window = turtle.Screen()
-window.bgcolor("blue")    
+window.bgcolor("white")    
 
-def draw_square():
+
+"""draw_square_which_makes_circle method"""
+def draw_square_which_makes_circle():
     brad = turtle.Turtle()
     brad.shape("turtle")
     brad.color("green")
@@ -29,51 +29,31 @@ def draw_square():
         print "square : %d" %(x)
 
 
-def draw_circle():    
-    angie = turtle.Turtle()
-    angie.shape("arrow")
-    angie.color("red")
-    for i in range(1,73):
-        draw_rhombus(angie)
-        angie.right(5)
-
-
-    
-    #angie.circle(100)
-    #angie.stamp()
-    #angie.penup()
-
-
-def draw_trangle():
-##    jim = turtle.Turtle()
-##    jim.color("white")
-##    jim.setx(200)
-##    jim.sety(200)
-##    jim.setheading(0)
-##    jim.forward(100)
-##    jim.setheading(90)
-##    jim.forward(100)
-    #jim.home()
-    window.exitonclick()
-
-def draw_name():
+"""Draw Dandelian kind of flower"""
+def draw_flower():
     o = turtle.Turtle()
-    o.color("red")
-    o.setpos(-300,-300)
+    o.speed(0)
+       
     for i in range (1,73):
+        color = random.choice(colors) #Choose a random color
+        o.color(color)
         draw_rhombus(o)
         o.right(5)
-    
-    #o.fill(True)
-    #o.begin_fill()
-    #o.circle(120,180)
-    #o.end_fill()
+    o.pensize(6)
+    o.color("green")
+    o.right(-270)
+    o.forward(400)
+    o.pensize(3)
+    o.right(110)
+    draw_rhombus(o)
+
+
     
 def draw_rhombus(some_turtle):
     for i in range(1,3):
-        some_turtle.forward(50)
+        some_turtle.forward(81)
         some_turtle.right(30)
-        some_turtle.forward(50)
+        some_turtle.forward(80)
         some_turtle.right(150)
 
 def draw_trangle_down(t_turtle, fwd_len):
@@ -118,26 +98,13 @@ def fractal(one_turtle,length,ori,recur):
             tt.right(120)
 
 
-        
-    
-
             
-    
-    #draw_rhombus(x)
-    #draw_circle()
-    #x.right(270)
-    #x.forward(100)
-       
-        
 
-
-
-#draw_square()
-#draw_circle()
-#draw_name()
 try:
-    draw_try()
-    draw_trangle()
+    #draw_square_which_makes_circle()
+    draw_flower()
+    #draw_try()
+    window.exitonclick()
 except KeyboardInterrupt:
     print "Bye"
     window.exitonclick()
