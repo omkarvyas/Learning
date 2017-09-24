@@ -51,9 +51,9 @@ def draw_flower():
     
 def draw_rhombus(some_turtle):
     for i in range(1,3):
-        some_turtle.forward(81)
+        some_turtle.forward(100)
         some_turtle.right(30)
-        some_turtle.forward(80)
+        some_turtle.forward(100)
         some_turtle.right(150)
 
 def draw_trangle_down(t_turtle, fwd_len):
