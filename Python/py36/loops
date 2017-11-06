@@ -1,0 +1,33 @@
+"""Write a function, `tag_count`, that takes as its argument a list
+of strings. It should return a count of how many of those strings
+are XML tags. You can tell if a string is an XML tag if it begins
+with a left angle bracket "<" and end with a right angle bracket ">".
+"""
+
+
+# TODO: Define the tag_count function
+def tag_count(list1):
+    count = 0
+    found_start = 0
+    found_end = 0
+    for str_1 in list1:
+        print(str_1)
+        if (str_1.find("<") is not -1):
+            print("in fisrt if")
+            found_start = 1
+            if (str_1.find(">") is not -1):
+                print("in second if")
+                found_end = 1
+        if (found_start and found_end):
+            found_start = 0
+            found_end = 0
+            count = count + 1
+
+    return count
+
+
+# Test for the tag_count function:
+list1 = ['<greeting>', 'Hello World!', '</greeting>']
+# list1 = ['<em>', '>>>', 'Badgers!', '<<<', '</em>']
+count = tag_count(list1)
+print("Expected result: 2, Actual result: {}".format(count))

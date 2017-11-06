@@ -1,0 +1,19 @@
+
+https://confluence.qualcomm.com/confluence/display/MLS/Machine+Learning+Summit+Home
+https://www.udacity.com/course/introduction-to-python--ud1110
+https://www.udacity.com/course/c-for-programmers--ud210
+
+AI Syllabus 
+https://medium.com/udacity/ai-nanodegree-program-syllabus-term-1-in-depth-80c41297acaf
+https://medium.com/udacity/ai-nanodegree-program-syllabus-term-2-deep-learning-in-depth-d935197b66ec
+
+python OOPS
+https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc
+http://web.stanford.edu/class/cs224n/
+http://cs231n.github.io/
+
+Standford Courses 
+CS224d:  http://cs224d.stanford.edu/ Deep Learning for Natural Language Processing
+CS224n:  http://web.stanford.edu/class/cs224n/ Natural Language Processing with Deep Learning
+CS231n:  http://cs231n.github.io/ Convolutional Neural Networks for Visual Recognition
+oxford dl: https://github.com/oxford-cs-deepnlp-2017/lectures Oxford Deep NLP 2017 course etc.

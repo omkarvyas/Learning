@@ -1,6 +1,15 @@
 import webbrowser
+
+"""Class defination of a movie trailier """
+
 class Movie():
+    MOVIE_RATING = ["G","PG", "PG13"]
     def __init__(self,movie_title,movie_storyline,poster_image,trailer_youtube):
+        # type: (object, object, object, object) -> object
+        """
+
+        :rtype: object
+        """
         self.title = movie_title
         self.storyline = movie_storyline
         self.poster_image_url = poster_image
