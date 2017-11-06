@@ -8,21 +8,9 @@ with a left angle bracket "<" and end with a right angle bracket ">".
 # TODO: Define the tag_count function
 def tag_count(list1):
     count = 0
-    found_start = 0
-    found_end = 0
     for str_1 in list1:
-        print(str_1)
-        if (str_1.find("<") is not -1):
-            print("in fisrt if")
-            found_start = 1
-            if (str_1.find(">") is not -1):
-                print("in second if")
-                found_end = 1
-        if (found_start and found_end):
-            found_start = 0
-            found_end = 0
-            count = count + 1
-
+        if str_1[0] == '<' and str_1[-1] == '>':
+            count +=1
     return count
 
 
